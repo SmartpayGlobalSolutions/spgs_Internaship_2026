@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <h1> Welcome to the website </h1>
+        <h1> <asp:Label runat="server" ID="lblWelcomeMessage"></asp:Label> </h1>
         <a href="Login.aspx" >Logout</a>
     </div>
     </form>

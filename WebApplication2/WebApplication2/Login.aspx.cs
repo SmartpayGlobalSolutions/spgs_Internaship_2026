@@ -9,10 +9,13 @@ namespace WebApplication2
 {
     public partial class Login : System.Web.UI.Page
     {
-
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (! IsPostBack) // you Page_load Is called first time and Not called from any event.
+            {
+                Session.Clear();
+                Session.Abandon();    
+            }
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -38,6 +41,9 @@ namespace WebApplication2
 
             if (username == DBLogic._username && password == DBLogic._password)
             {
+                Session["username"] = username;
+                Session["loginStatus"] = "1";
+
                 Response.Redirect("welcome.aspx");
             }
             else
