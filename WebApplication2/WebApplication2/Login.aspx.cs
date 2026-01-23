@@ -9,6 +9,7 @@ namespace WebApplication2
 {
     public partial class Login : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -16,7 +17,34 @@ namespace WebApplication2
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            Response.Write("Welcome " + txtUsername.Text);
+            //Response.Write("<script> alert('"+txtUsername.Text+"'); </script>");
+            //Response.Write("<h3><i>Welcome " + txtUsername.Text + "</i></h3>");
+            
+            string username = txtUsername.Text.Trim();
+            string password = txtpassword.Text.Trim();
+            
+            if (string.IsNullOrEmpty(username))
+            {
+                Response.Write("<script> alert('Please enter valid Username !'); </script>");
+                return;
+            }
+            else if (string.IsNullOrEmpty(password))
+            {
+                Response.Write("<script> alert('Please enter valid password !'); </script>");
+                return;
+            }
+
+            //Response.Write("You are successfully Logged In !");
+
+            if (username == DBLogic._username && password == DBLogic._password)
+            {
+                Response.Redirect("welcome.aspx");
+            }
+            else
+            {
+                Response.Write("<script> alert('username or password is not valid !'); </script>");
+                return;
+            }
         }
     }
 }
