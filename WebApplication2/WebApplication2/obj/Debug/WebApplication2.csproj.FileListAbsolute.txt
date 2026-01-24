@@ -8,3 +8,10 @@ D:\GitHub Projects\spgs_Internaship_2026\WebApplication2\WebApplication2\bin\Web
 D:\GitHub Projects\spgs_Internaship_2026\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
 D:\GitHub Projects\spgs_Internaship_2026\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
 D:\GitHub Projects\spgs_Internaship_2026\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csprojResolveAssemblyReference.cache
+D:\Work\spga_internship_2026\WebApplication2\WebApplication2\bin\WebApplication2.dll.config
+D:\Work\spga_internship_2026\WebApplication2\WebApplication2\bin\WebApplication2.dll
+D:\Work\spga_internship_2026\WebApplication2\WebApplication2\bin\WebApplication2.pdb
+D:\Work\spga_internship_2026\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.AssemblyReference.cache
+D:\Work\spga_internship_2026\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csproj.CoreCompileInputs.cache
+D:\Work\spga_internship_2026\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
+D:\Work\spga_internship_2026\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
