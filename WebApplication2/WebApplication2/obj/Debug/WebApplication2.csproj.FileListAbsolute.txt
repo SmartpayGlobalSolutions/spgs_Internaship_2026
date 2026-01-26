@@ -1,5 +1,0 @@
-D:\GitHub Projects\spgs_Internaship_2026\WebApplication2\WebApplication2\bin\WebApplication2.dll
-D:\GitHub Projects\spgs_Internaship_2026\WebApplication2\WebApplication2\bin\WebApplication2.pdb
-D:\GitHub Projects\spgs_Internaship_2026\WebApplication2\WebApplication2\obj\Debug\WebApplication2.csprojResolveAssemblyReference.cache
-D:\GitHub Projects\spgs_Internaship_2026\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
-D:\GitHub Projects\spgs_Internaship_2026\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
