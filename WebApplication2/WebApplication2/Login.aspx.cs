@@ -18,7 +18,7 @@ namespace WebApplication2
             }
         }
 
-        protected void btnLogin_Click(object sender, EventArgs e)
+        protected void BtnLogin_Click(object sender, EventArgs e)
         {
             //Response.Write("<script> alert('"+txtUsername.Text+"'); </script>");
             //Response.Write("<h3><i>Welcome " + txtUsername.Text + "</i></h3>");
