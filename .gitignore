@@ -1,4 +1,7 @@
+only admin can change cnic Mobile and email.
+
+Logo change
 /WebApplication2/WebApplication2.v11.suo
-/WebApplication2/WebApplication2/bin
-/WebApplication2/WebApplication2/obj
 /WebApplication2/WebApplication2/WebApplication2.csproj.user
+/WebApplication2/WebApplication2/bin
+/WebApplication2/WebApplication2/obj/Debug
