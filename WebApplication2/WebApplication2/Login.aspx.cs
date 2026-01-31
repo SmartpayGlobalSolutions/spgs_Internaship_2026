@@ -9,6 +9,7 @@ namespace WebApplication2
 {
     public partial class Login : System.Web.UI.Page
     {
+        DBHelper db = new DBHelper();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (! IsPostBack) // you Page_load Is called first time and Not called from any event.
@@ -37,6 +38,7 @@ namespace WebApplication2
                 return;
             }
 
+            db.UserLogin(username, password);
             //Response.Write("You are successfully Logged In !");
 
             if (username == DBLogic._username && password == DBLogic._password)

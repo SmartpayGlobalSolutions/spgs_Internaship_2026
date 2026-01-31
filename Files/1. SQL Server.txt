@@ -1,0 +1,15 @@
+1. SQL Server 
+	Server 
+	Azure
+2. File base DB
+
+3. My SQL
+
+4. Oracle
+	Cloud based
+
+5. Firebase
+
+6. Mongo DB
+
+7. Microsoft Access
