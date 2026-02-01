@@ -21,6 +21,8 @@ namespace WebApplication2
 
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
+            //int rslt = db.UserSignup("", "", "", "", "");
+
             //Response.Write("<script> alert('"+txtUsername.Text+"'); </script>");
             //Response.Write("<h3><i>Welcome " + txtUsername.Text + "</i></h3>");
             
@@ -38,19 +40,27 @@ namespace WebApplication2
                 return;
             }
 
-            db.UserLogin(username, password);
+            
+            
+            
             //Response.Write("You are successfully Logged In !");
 
-            if (username == DBLogic._username && password == DBLogic._password)
-            {
-                Session["username"] = username;
+            //if (username == DBLogic._username && password == DBLogic._password)
+            //{
+
+            try
+	        {	        
+		       
+                string fullname = db.UserLogin(username, password);
+
+                Session["username"] = fullname;
                 Session["loginStatus"] = "1";
 
                 Response.Redirect("welcome.aspx");
-            }
-            else
-            {
-                Response.Write("<script> alert('username or password is not valid !'); </script>");
+	        }
+	        catch (Exception ex)
+	        {
+                Response.Write("<script> alert('"+ ex.Message +"'); </script>");
                 return;
             }
         }
