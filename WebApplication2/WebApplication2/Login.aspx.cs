@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -40,20 +41,19 @@ namespace WebApplication2
                 return;
             }
 
-            
-            
-            
-            //Response.Write("You are successfully Logged In !");
-
-            //if (username == DBLogic._username && password == DBLogic._password)
-            //{
 
             try
-	        {	        
-		       
-                string fullname = db.UserLogin(username, password);
+	        {
+                string qry = string.Format("SELECT firstName,lastName FROM users WHERE userName = '{0}' AND Password = '{1}'",username,password);
+                //string fullname = db.UserLogin(username, password);
+                DataTable dt = db.GetDataFromQuery(qry);
 
-                Session["username"] = fullname;
+                if (dt.Rows.Count == 0)
+                {
+                    throw new Exception("Invalid username or password !");
+                }
+
+                Session["username"] = dt.Rows[0]["firstName"].ToString() +" "+ dt.Rows[0]["lastName"].ToString();
                 Session["loginStatus"] = "1";
 
                 Response.Redirect("welcome.aspx");

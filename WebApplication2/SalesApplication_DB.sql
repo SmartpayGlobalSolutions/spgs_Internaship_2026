@@ -1,6 +1,9 @@
 CREATE DATABASE SalesApplication
 GO
 
+Use SalesApplication
+GO 
+
 CREATE TABLE Users (
 userId INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
 userName VARCHAR(50) NOT NULL UNIQUE,

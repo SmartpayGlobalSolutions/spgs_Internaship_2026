@@ -35,7 +35,6 @@ namespace WebApplication2
                 UserFullName = dt.Rows[0][0].ToString();
             }
 
-            
             conn.Close();
             //if (conn.State == ConnectionState.Closed)
             //{
@@ -58,6 +57,25 @@ namespace WebApplication2
             conn.Close();
 
             return affectedRows;
+        }
+
+
+        public DataTable GetDataFromQuery(string qry)
+        {
+
+            SqlConnection conn = new SqlConnection(connectionString);
+            
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+
+            SqlDataAdapter sda = new SqlDataAdapter(qry, conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            conn.Close();
+
+            return dt;
         }
     }
 }
